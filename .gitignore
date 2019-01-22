@@ -1,0 +1,12 @@
+# npm
+/node_modules
+npm-debug.log
+
+# VS Code
+/.vscode
+
+# OS X
+.DS_Store
+
+# DB for export-csv
+Bazastara.csv

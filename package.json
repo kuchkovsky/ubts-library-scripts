@@ -1,0 +1,20 @@
+{
+  "name": "ubts-library-scripts",
+  "version": "1.0.0",
+  "description": "UBTS Library Scripts",
+  "main": "export-csv.js",
+  "scripts": {
+    "export-csv": "node export-csv.js"
+  },
+  "author": "Yaroslav Kuchkovsky",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuchkovsky/ubts-library-scripts.git"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.8",
+    "superagent": "^4.1.0",
+    "superagent-throttle": "^1.0.1"
+  }
+}
