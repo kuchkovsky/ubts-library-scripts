@@ -28,12 +28,16 @@ const toNumber = (field, defaultValue = undefined) => {
   return number ? number : defaultValue;
 };
 
+const onlyUnique = (value, index, self) => self.indexOf(value) === index;
+
 const deriveTags = row => {
   const wordsArray = [];
   for (let i = 1; i <= 5; i++) {
     wordsArray.push(row[`Word${i}`]);
   }
-  return wordsArray.filter(word => word.length);
+  return wordsArray.filter(word => word.length)
+    .map(word => word.toLowerCase())
+    .filter(onlyUnique);
 }
 
 const processData = async () => {
